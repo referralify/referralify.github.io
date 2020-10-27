@@ -37,12 +37,7 @@ The server will watch your filesystem, and any changes will trigger an automatic
 This repository is configured to deploy from the `gh-pages` branch.
 To update the `gh-pages` branch with a new build, you can run the convenience bash script:
 ```
-./commit-gh-pages.sh
-```
-
-If the build looks good, then push to `origin` `gh-pages`.
-```
-git push origin gh-pages
+./push-gh-pages.sh
 ```
 
 ### Notes
