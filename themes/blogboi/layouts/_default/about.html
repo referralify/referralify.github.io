@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="flex justify-center">
+    <div class="flex sm:max-w-screen-sm md:max-w-screen-md xl:max-w-screen-lg xl:pl-12 w-full">
+        <article class="sm:max-w-screen-sm mb-4 w-full">
+            <h1 class="font-nunito text-3xl text-blue-dark">
+                {{ .Title }}
+            </h1>
+            <div class="mt-8 text-gray-700 sm:text-lg">
+                {{ .Content }}
+            </div>
+        </article>
+    </div>
+</div>
+{{ end }}
