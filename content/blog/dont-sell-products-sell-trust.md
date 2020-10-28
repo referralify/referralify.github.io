@@ -3,7 +3,7 @@ title: Don't sell products. Sell trust.
 publishDate: 2020-11-29
 draft: true
 
-thumbnail: /images/holding-grandmas-hands.jpg
+thumbnail: /images/holding-grandmas-hands-705.jpg
 ---
 
 Hello there.

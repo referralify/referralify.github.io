@@ -3,7 +3,7 @@ title: Comprehensive Guide to Marketing Channels
 publishDate: 2020-11-03
 draft: true
 
-thumbnail: /images/designer-at-desk.jpg
+thumbnail: /images/designer-at-desk-705.jpg
 ---
 
 Hello there.

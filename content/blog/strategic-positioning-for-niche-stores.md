@@ -3,7 +3,7 @@ title: Strategic Positioning for Niche Stores
 publishDate: 2020-12-09
 draft: true
 
-thumbnail: /images/mixes-flower-stall.jpg
+thumbnail: /images/mixes-flower-stall-705.jpg
 ---
 
 Hello there.
