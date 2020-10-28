@@ -11,6 +11,12 @@ module.exports = {
           dark: '#2a627a',
           darker: '#163441',
         },
+        green: {
+          light: '#d8ff8a',
+          default: '#80be00',
+          dark: '#336600',
+          darker: '#1a3300',
+        }
       },
     },
   },

@@ -1,7 +1,9 @@
 ---
-title: Considering going into management? Start with being an Onboarding Mentor.
-date: 2020-11-10
+title: Don't sell products. Sell trust.
+publishDate: 2020-11-29
 draft: true
+
+thumbnail: /images/holding-grandmas-hands.jpg
 ---
 
 Hello there.

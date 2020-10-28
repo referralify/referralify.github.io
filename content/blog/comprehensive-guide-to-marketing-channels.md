@@ -1,7 +1,9 @@
 ---
-title: Sourcing for Remote Teams
-publishDate: 2020-12-01
+title: Comprehensive Guide to Marketing Channels
+publishDate: 2020-11-03
 draft: true
+
+thumbnail: /images/designer-at-desk.jpg
 ---
 
 Hello there.

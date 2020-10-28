@@ -1,50 +1,65 @@
 {{ define "main" }}
-<div class='banner'>
-    <div class='squares'>
-        <div class='square'></div>
-        <div class='square'></div>
-        <div class='square'></div>
-        <div class='square'></div>
-        <div class='square'></div>
-        <div class='square'></div>
-        <div class='square'></div>
-        <div class='square'></div>
-        <div class='square'></div>
-        <div class='square'></div>
+<div class="flex flex-col md:flex-row-reverse max-w-screen-xl">
+    <div class="flex justify-center md:w-1/2 md:items-center">
+        <div class="my-6">
+            <h1 class="font-nunito text-center text-green-dark text-2xl md:text-3xl lg:text-4xl max-w-xs lg:max-w-xl">
+                Grow a Shopify business that <span class="text-green">delights your customers</span>
+            </h1>
+        </div>
     </div>
-</div>
-<div class="flex justify-center">
-    <div class="bg-blue max-w-xs sm:max-w-md mb-10 sm:mb-24 overflow-hidden pt-5 rounded-lg shadow-lg w-full">
-        <h1 class="font-nunito mb-4 text-center text-xl sm:text-3xl text-white tracking-wider">Applicant Tracking Repo
-        </h1>
-        <h2 class="font-nunito mb-3 sm:mb-4 text-center text-sm sm:text-lg text-white tracking-wider">A simple hiring
-            workflow
-            for
-            <br />reviewing job applicants.
-        </h2>
-        <div>
-            <a class="bg-blue-dark hover:bg-blue-darker block flex justify-center items-center py-3 trans-bgcolor"
-                href="https://github.com/floatpoint-team/applicant-tracking-repo">
-                <img class="h-5 mr-2" src="/images/github_logo_light.png">
-                <span class="text-sm text-white tracking-wider">View on GitHub</span>
-            </a>
+    <div class="md:w-1/2">
+        <div class="w-full md:rounded-b-sm md:overflow-hidden md:shadow">
+            <img class="w-full" src="/images/coffee-and-a-chat-with-face-masks.jpg" />
         </div>
     </div>
 </div>
-<div class="flex justify-center">
-    <div class="flex flex-wrap sm:max-w-screen-sm md:max-w-screen-md xl:max-w-screen-lg xl:pl-12 w-full">
-        <h2 class="mb-2 inline-block text-blue tracking-widest w-full">
-            <a href="/blog/" class="hover:aniline-blue">ENGINEERING & HR BLOG</a>
-        </h2>
+<div class="bg-green-dark flex justify-center w-full md:mt-8">
+    <div class="px-2 py-8 md:py-12 max-w-sm md:max-w-lg">
+        <p class="font-nunito text-white text-lg md:text-2xl">We build tools to help Shopify stores improve their <span
+                class="text-green-light">marketing</span> and increase <span class="text-green-light">sales</span>.
+        </p>
+    </div>
+</div>
+<div class="h-8 md:h-16"></div>
+<div class="flex flex-col max-w-screen-xl px-1">
+    <div class="flex justify-center">
+        <div class="bg-green px-6 py-2 rounded-sm">
+            <h2 class="font-nunito text-white text-center md:text-xl tracking-wider">
+                <a href="/blog/" class="hover:aniline-black">Latest Blog Articles</a>
+            </h2>
+        </div>
+    </div>
+    <div class="flex flex-col items-center">
         {{ range .Site.Sections }}
         {{ if eq .Title "Blogs" }}
         {{ range .Pages }}
-        <section class="sm:max-w-screen-sm mb-4 sm:mb-10 w-full">
-            <h1 class="font-nunito text-2xl sm:text-3xl text-blue-dark hover:text-blue trans-color">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h1>
-            <p class="text-gray-600">{{ .Date.Format "January 2, 2006" }}</p>
+        <section class="flex flex-col items-center md:max-w-screen-md mt-8 sm:mt-12 w-11/12">
+            <div class="w-full">
+                <p class="text-gray-600 text-sm">{{ .Date.Format "January 2, 2006" }}</p>
+                <h1 class="text-green-dark text-2xl sm:text-3xl md:text-4xl hover:text-green trans-color">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h1>
+            </div>
+            <div class="flex justify-center my-4">
+                <div class="rounded-sm sm:rounded-lg overflow-hidden shadow w-full">
+                    <img class="w-full" src="{{ .Param "thumbnail" }}" />
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-gray-600 text-sm sm:text-base mb-2">
+                    This is an example of a summary. There should be like 3-4 sentences. Just gives the reader something
+                    to skim.
+                </p>
+                <div>
+                    <a href="{{ .Permalink }}"
+                        class="font-nunito text-green-dark text-sm sm:text-base hover:aniline-green-dark">Read
+                        More</a>
+                </div>
+            </div>
         </section>
+        <div class="px-2 py-4 w-full">
+            <hr class="w-full" />
+        </div>
         {{ end }}
         {{ end }}
         {{ end }}

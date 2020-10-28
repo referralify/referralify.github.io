@@ -1,7 +1,9 @@
 ---
-title: Onboarding Mentor
-publishDate: 2020-10-27
+title: Strategic Positioning for Niche Stores
+publishDate: 2020-12-09
 draft: true
+
+thumbnail: /images/mixes-flower-stall.jpg
 ---
 
 Hello there.

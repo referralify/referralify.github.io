@@ -5,7 +5,7 @@
 <body class="flex flex-col min-h-screen preload" onload="removePreload()">
     {{- partial "dev-size-indicator.html" . -}}
     {{- partial "header.html" . -}}
-    <main class="flex-1 mx-4 mt-4 sm:mt-16">
+    <main class="flex flex-col items-center">
         {{- block "main" . }}{{- end }}
     </main>
     {{- partial "dev-parameters.html" . -}}
