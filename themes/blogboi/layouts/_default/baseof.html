@@ -10,11 +10,11 @@
     </main>
     {{- partial "dev-parameters.html" . -}}
     {{- partial "footer.html" . -}}
+    <script>
+        function removePreload() {
+            document.getElementsByClassName("preload")[0].classList.remove("preload");
+        }
+    </script>
 </body>
-<script>
-    function removePreload() {
-        document.getElementsByClassName("preload")[0].classList.remove("preload");
-    }
-</script>
 
 </html>

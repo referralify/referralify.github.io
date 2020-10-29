@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="flex justify-center">
+    <div class="flex sm:max-w-screen-sm md:max-w-screen-md xl:max-w-screen-lg xl:pl-12 w-full">
+        <article class="sm:max-w-screen-sm mb-4 w-full">
+            <h1 class="font-nunito text-3xl text-green-dark tracking-wide">
+                Thanks for subscribing!
+            </h1>
+            <h2 class="font-nunito text-xl tracking-wide">
+                Email: <span class="tracking-wider js-email">none</span>
+            </h2>
+            <div class="mt-8 text-gray-700 sm:text-lg">
+                If you would like to be unsubscribed, please reach out to <a href="mailto:help@referralify.co"
+                    class="">our help email</a>.
+            </div>
+        </article>
+    </div>
+</div>
+<script>
+    ; (function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get("email");
+        var emailSpan = document.getElementsByClassName("js-email")[0];
+        emailSpan.innerHTML = email;
+    })();
+</script>
+{{ end }}
