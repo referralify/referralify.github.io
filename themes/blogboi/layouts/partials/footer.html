@@ -1,3 +1,37 @@
-<footer class="w-full text-center border-t border-gray-200 p-4 pin-b text-xs text-gray-400">
-    <p>made with <a href="https://gohugo.io" class="underline hover:text-blue-400">Hugo</a> and <a href="https://tailwindcss.com" class="underline hover:text-blue-400">TailwindCSS</a></p>
+<footer class="mt-12 w-full bottom-0 text-xs">
+    <div class="flex justify-center bg-green w-full">
+        <div class="flex items-center px-4 py-2 w-full max-w-screen-xl">
+            <a href="{{ .Site.Home.Permalink }}"
+                class="hover:bg-green-dark flex items-center px-2 md:px-3 py-1 md:py-2 my-1 rounded-sm md:rounded css-trans-bgcolor">
+                <img class="h-6 md:h-8" src="/images/referralify_logo.svg">
+            </a>
+        </div>
+    </div>
+    <div class="flex justify-center bg-green-darker w-full">
+        <div class="flex px-5 py-8 w-full max-w-screen-xl">
+            <div>
+                <div class="my-1">
+                    <a href="https://twitter.com/Referralify"
+                        class="font-nunito text-lg text-white tracking-wide hover:aniline-white">Twitter</a>
+                </div>
+                <div class="my-1">
+                    <a href="/blog/" class="font-nunito text-lg text-white tracking-wide hover:aniline-white">Ecommerce
+                        Blog</a>
+                </div>
+                <div class="my-1">
+                    <a href="/about/" class="font-nunito text-lg text-white tracking-wide hover:aniline-white">About
+                        Us</a>
+                </div>
+                <div class="my-1">
+                    <a href="/privacy/" class="font-nunito text-lg text-white tracking-wide hover:aniline-white">Privacy
+                        Policy</a>
+                </div>
+                <div class="mt-6">
+                    <p class="font-nunito text-white tracking-wide">
+                        Copyright &copy; {{ now.Year }}, Prime Factor LLC
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>

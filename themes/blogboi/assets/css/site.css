@@ -61,7 +61,7 @@
 
 /* Form Inputs */
 .css-input-text {
-  @apply bg-green-darker;
+  @apply bg-green-dark ;
   @apply border-2;
   @apply border-white;
   @apply font-nunito;
@@ -77,7 +77,7 @@
 
 .css-input-text:hover,
 .css-input-text:focus {
-  @apply border-green;
+  @apply border-green-light;
 }
 
 .css-btn .css-btn-left,
@@ -104,4 +104,9 @@
 
 .css-btn:hover .css-btn-right {
   right: -.2rem;
+}
+
+/* Blog List and Preview */
+.css-blog-preview:hover > div > h1 {
+  @apply text-green;
 }
