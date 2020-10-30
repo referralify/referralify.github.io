@@ -1,0 +1,66 @@
+{{ define "main" }}
+<div class="flex flex-col md:flex-row max-w-screen-xl">
+    <div class="flex justify-center md:w-1/2 md:items-center">
+        <div class="my-6">
+            <h1 class="font-nunito text-center text-green-dark text-2xl md:text-3xl lg:text-4xl max-w-xs lg:max-w-md">
+                Ideas and strategies for <span class="text-green">modern entrepreneurs</span>
+            </h1>
+        </div>
+    </div>
+    <div class="md:w-1/2">
+        <div class="w-full md:rounded-b-sm md:overflow-hidden md:shadow">
+            <img class="w-full" alt="Two friends with face masks having a pleasant coffee chat."
+                src="/images/senior-teaching-young-man-800.jpg" />
+        </div>
+    </div>
+</div>
+<div class="bg-green-dark flex justify-center w-full md:mt-8">
+    <div class="px-2 py-4 md:py-6 max-w-sm md:max-w-lg">
+        <p class="font-nunito text-white text-lg md:text-2xl">Ecommerce Blog
+        </p>
+    </div>
+</div>
+<div class="h-8 md:h-16"></div>
+<div class="flex flex-col max-w-screen-xl">
+    <div class="flex flex-col items-center">
+        {{ range .Pages }}
+        <section class="flex flex-col items-center md:max-w-screen-md mt-8 sm:mt-12 w-11/12">
+            <div class="w-full">
+                <p class="text-gray-600 text-sm">{{ .Date.Format "January 2, 2006" }}</p>
+            </div>
+            <a href="{{ .Permalink }}" class="css-blog-preview">
+                <div class="w-full">
+                    <h1 class="text-green-darker text-2xl sm:text-3xl md:text-4xl css-trans-color">
+                        {{ .Title }}
+                    </h1>
+                </div>
+                <div class="flex justify-center my-4">
+                    <div class="rounded-sm sm:rounded-lg overflow-hidden shadow w-full">
+                        <img class="w-full" src="{{ .Param "thumbnail" }}" />
+                    </div>
+                </div>
+            </a>
+            <div class="w-full">
+                <p class="text-gray-600 text-sm sm:text-base mb-2">
+                    This is an example of a summary. There should be like 3-4 sentences. Just gives the reader something
+                    to skim.
+                </p>
+                <div>
+                    <a href="{{ .Permalink }}">
+                        <div class="inline-flex items-center css-btn">
+                            <span class="font-nunito text-green-dark text-center text-sm sm:text-base css-btn-left">
+                                Read More
+                            </span>
+                            <img src="/icons/right-arrow-green-dark.svg" class="h-3 css-btn-right">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="px-2 py-4 w-full">
+            <hr class="w-full" />
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

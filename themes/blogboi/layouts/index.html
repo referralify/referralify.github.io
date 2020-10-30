@@ -22,7 +22,7 @@
     </div>
 </div>
 <div class="h-8 md:h-16"></div>
-<div class="flex flex-col max-w-screen-xl px-1">
+<div class="flex flex-col max-w-screen-xl">
     <div class="flex justify-center">
         <a href="/blog/">
             <div class="bg-green-dark hover:bg-green-darker px-6 py-2 rounded-sm shadow css-trans-bgcolor">
@@ -35,7 +35,7 @@
     <div class="flex flex-col items-center">
         {{ range .Site.Sections }}
         {{ if eq .Title "Blogs" }}
-        {{ range .Pages }}
+        {{ range first 3 .Pages }}
         <section class="flex flex-col items-center md:max-w-screen-md mt-8 sm:mt-12 w-11/12">
             <div class="w-full">
                 <p class="text-gray-600 text-sm">{{ .Date.Format "January 2, 2006" }}</p>

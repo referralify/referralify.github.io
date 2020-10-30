@@ -1,14 +1,47 @@
 {{ define "main" }}
-<div class="flex justify-center">
-    <div class="flex sm:max-w-screen-sm md:max-w-screen-md xl:max-w-screen-lg xl:pl-12 w-full">
-        <article class="sm:max-w-screen-sm mb-4 w-full">
-            <h1 class="font-nunito text-3xl text-blue-dark">
-                {{ .Title }}
+<div class="flex flex-col md:flex-row-reverse max-w-screen-xl">
+    <div class="flex justify-center md:w-1/2 md:items-center">
+        <div class="my-6">
+            <h1 class="font-nunito text-center text-green-dark text-2xl md:text-3xl lg:text-4xl max-w-xs lg:max-w-md">
+                <span class="text-green">Helping you build</span> wonderful online businesses
             </h1>
-            <div class="mt-8 text-gray-700 sm:text-lg">
-                {{ .Content }}
+        </div>
+    </div>
+    <div class="md:w-1/2">
+        <div class="w-full md:rounded-b-sm md:overflow-hidden md:shadow">
+            <img class="w-full" alt="Two friends with face masks having a pleasant coffee chat."
+                src="/images/sun-behind-some-plants-800.jpg" />
+        </div>
+    </div>
+</div>
+<div class="bg-green-dark flex justify-center w-full md:mt-8">
+    <div class="px-2 py-4 md:py-6 max-w-sm md:max-w-lg">
+        <p class="font-nunito text-white text-lg md:text-2xl">About Referralify
+        </p>
+    </div>
+</div>
+<div class="h-8 md:h-16"></div>
+<div class="flex flex-col max-w-screen-xl">
+    <div class="flex flex-col items-center">
+        <section class="flex flex-col items-center md:max-w-screen-md mt-8 sm:mt-12 w-11/12">
+            <div class="flex flex-col items-center w-full">
+                <div class="w-32">
+                    <img src="/images/bob_chen_avatar.jpg" class="border-4 border-green rounded-full w-full" />
+                </div>
+                <div>
+                    <h1 class="font-nunito text-center text-lg">Bob Chen</h1>
+                    <h2 class="font-nunito text-center text-green-dark">Content Editor</h2>
+                    <a href="mailto:bob@referralify.co">
+                        <div class="flex items-center px-4 py-1 css-btn">
+                            <img src="/icons/mail-green-dark.svg" class="h-4 css-btn-left">
+                            <p class="font-nunito text-green-dark text-center text-sm sm:text-base css-btn-right">
+                                bob@referralify.co
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </article>
+        </section>
     </div>
 </div>
 {{ end }}
